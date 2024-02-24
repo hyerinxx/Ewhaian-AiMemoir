@@ -1,31 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
+import { H4 } from '../../styles/Text';
 
-const Container = styled.div`
-    display: flex;
-`;
-const NavContainer = styled.nav`
+const Ul = styled.ul`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: auto;
-    margin-right: 30px;
-    gap: 20px;
+`;
+const Li = styled.li`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 15px;
 `;
 const Icon = styled.img`
-    width: 30px;
-    height: 30px;
+    width: 30px; height: 30px;
+    padding-right: 15px;
+`;
+const Text = styled(H4)`
+    margin-top: -3px;
+    padding-right: 15px;
+    display: none;
+
+    .menu:hover & {
+        display: block;
+    }
 `;
 
-function Nav(props) {
+function Nav() {
     return (
-        <Container>
-            <></>
-            <NavContainer>
+        <nav>
+            <Ul>
+                <Li className='menu'>
                     <Icon src="\icon\storage.png" alt="보관함" />
+                    <Text>보관함</Text>
+                </Li>
+                <Li className='menu'>
                     <Icon src="\icon\logout.png" alt="로그아웃" />
-            </NavContainer>
-        </Container>
+                    <Text>로그아웃</Text>
+                </Li>
+            </Ul>
+        </nav>
     );
 }
 
