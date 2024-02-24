@@ -1,16 +1,20 @@
 import React from 'react';
-import '../../styles/Generation.css';
-import Header from './Header';
 import Nav from './Nav';
-import { H1, H2, H3, H4 } from '../../styles/Text';
+import Header from './Header';
+import InputForm from './InputForm';
+import '../../styles/Generation.css';
 
 function Main() {
     return (
         <main>
-            <Nav></Nav>
-            <section>
-                <Header image="\icon\logo-aimemoir.png">심리상담사 GPT AI 회고록</Header>
-            </section>
+            <div id='nav-container'>
+                <></>
+                <Nav></Nav>
+            </div>
+            <Header image="\icon\logo-aimemoir.png">심리상담사 GPT AI 회고록</Header>
+            <div id='main-container'>
+                <InputForm></InputForm>
+            </div>
         </main>
     );
 }
