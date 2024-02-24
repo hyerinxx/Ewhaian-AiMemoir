@@ -8,6 +8,9 @@ const Container = styled.header`
     align-items: center;
     gap: 20px;
 `;
+const Text = styled(H1)`
+    margin-top: -8px;
+`;
 const Icon = styled.img`
     width: 70px;
     height: 70px;
@@ -16,7 +19,7 @@ const Icon = styled.img`
 function Header(props) {
     return (
         <Container>
-            <H1>{props.children}</H1>
+            <Text>{props.children}</Text>
             <Icon src={props.image} alt="Icon" />
         </Container>
     );
