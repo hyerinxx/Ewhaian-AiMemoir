@@ -10,7 +10,7 @@ function InputForm() {
             <H3>오늘의 일;</H3>
             <form>
                 <TextArea rows={4} placeholder='오늘 일어난 일들을 간단히 적어주세요.' />
-                <Button style={ButtonStyle}>GPT 회고록 생성해줘!</Button>
+                <Button>GPT 회고록 생성해줘!</Button>
             </form>
         </div>
     );
