@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H1 } from '../../styles/Text';
+import { H1 } from '@features/ui/Text';
 
 const Container = styled.header`
     display: flex;

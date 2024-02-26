@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H4 } from '../../styles/Text';
+import { H4 } from '@features/ui/Text';
 
 const Ul = styled.ul`
     display: flex;
@@ -27,7 +27,7 @@ const Text = styled(H4)`
     }
 `;
 
-function Nav() {
+function GenerationNav() {
     return (
         <nav>
             <Ul>
@@ -44,4 +44,4 @@ function Nav() {
     );
 }
 
-export default Nav;
+export default GenerationNav;

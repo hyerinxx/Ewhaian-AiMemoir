@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import { H3 } from '@features/ui/Text';
 import { Input, Button } from 'antd';
 const { TextArea } = Input;
-import { H3 } from '../../styles/Text';
 
 function InputForm() {
     return (

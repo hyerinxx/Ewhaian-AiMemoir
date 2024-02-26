@@ -1,10 +1,10 @@
 import React from 'react';
-import Nav from './Nav';
-import Header from './Header';
-import InputForm from './InputForm';
-import '../../styles/Generation.css';
+import Nav from '@features/generation/GenerationNav';
+import Header from '@features/generation/Header';
+import InputForm from '@features/generation/InputForm';
+import './Generation.css';
 
-function Main() {
+function Generation() {
     return (
         <main>
             <div id='nav-container'>
@@ -19,4 +19,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Generation;
