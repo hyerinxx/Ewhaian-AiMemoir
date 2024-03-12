@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { H1 } from '@features/ui/Text';
 
 const Container = styled.header`
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,7 +17,7 @@ const Icon = styled.img`
     height: 70px;
 `;
 
-function Header(props) {
+function Title(props) {
     return (
         <Container>
             <Text>{props.children}</Text>
@@ -25,4 +26,4 @@ function Header(props) {
     );
 }
 
-export default Header;
+export default Title;

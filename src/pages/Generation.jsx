@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Nav from '@features/generation/GenerationNav';
-import Header from '@features/generation/Header';
+import Title from '@features/generation/Title';
 import InputForm from '@features/generation/InputForm';
 
 function Generation() {
@@ -9,7 +9,7 @@ function Generation() {
         <main>
             <Nav></Nav>
             <AppContainer>
-                <Header image="\icon\logo-aimemoir.png">심리상담사 GPT AI 회고록</Header>
+                <Title image="\icon\logo-aimemoir.png">심리상담사 GPT AI 회고록</Title>
                 <div id='main-container'>
                     <InputForm></InputForm>
                 </div>
