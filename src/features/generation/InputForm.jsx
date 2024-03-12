@@ -1,15 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 import { H3 } from '@features/ui/Text';
 import { Input, Button } from 'antd';
-import styled from 'styled-components';
 const { TextArea } = Input;
-
-const ButtonContainer = styled.div`
-    margin: 20px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-`;
 
 function InputForm() {
     return (
@@ -29,3 +22,10 @@ function InputForm() {
 }
 
 export default InputForm;
+
+const ButtonContainer = styled.div`
+    margin: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+`;

@@ -2,6 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import { H4 } from '@features/ui/Text';
 
+function GenerationNav() {
+    return (
+        <nav style={{display: "flex"}}>
+            <Ul>
+                <Li className='menu'>
+                    <Icon src="\icon\storage.png" alt="보관함" />
+                    <Text>보관함</Text>
+                </Li>
+                <Li className='menu'>
+                    <Icon src="\icon\logout.png" alt="로그아웃" />
+                    <Text>로그아웃</Text>
+                </Li>
+            </Ul>
+        </nav>
+    );
+}
+
+export default GenerationNav;
+
 const Ul = styled.ul`
     margin-left: auto;
     display: flex;
@@ -27,22 +46,3 @@ const Text = styled(H4)`
         display: block;
     }
 `;
-
-function GenerationNav() {
-    return (
-        <nav style={{display: "flex"}}>
-            <Ul>
-                <Li className='menu'>
-                    <Icon src="\icon\storage.png" alt="보관함" />
-                    <Text>보관함</Text>
-                </Li>
-                <Li className='menu'>
-                    <Icon src="\icon\logout.png" alt="로그아웃" />
-                    <Text>로그아웃</Text>
-                </Li>
-            </Ul>
-        </nav>
-    );
-}
-
-export default GenerationNav;
