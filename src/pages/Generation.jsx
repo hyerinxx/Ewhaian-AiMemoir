@@ -7,10 +7,7 @@ import './Generation.css';
 function Generation() {
     return (
         <main>
-            <div id='nav-container'>
-                <></>
-                <Nav></Nav>
-            </div>
+            <Nav></Nav>
             <Header image="\icon\logo-aimemoir.png">심리상담사 GPT AI 회고록</Header>
             <div id='main-container'>
                 <InputForm></InputForm>

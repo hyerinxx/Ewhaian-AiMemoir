@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { H4 } from '@features/ui/Text';
 
 const Ul = styled.ul`
+    margin-left: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +30,7 @@ const Text = styled(H4)`
 
 function GenerationNav() {
     return (
-        <nav>
+        <nav style={{display: "flex"}}>
             <Ul>
                 <Li className='menu'>
                     <Icon src="\icon\storage.png" alt="보관함" />
